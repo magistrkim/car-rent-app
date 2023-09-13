@@ -4,7 +4,7 @@ import svgr from 'vite-plugin-svgr';
 
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: '/car-rent-app',
+  base: '/car-rent-app/',
   resolve: {
     alias: {
       src: '/src',

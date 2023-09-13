@@ -10,7 +10,6 @@ export const GlobalStyles = css`
   html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
   }
 
   *,
@@ -25,7 +24,6 @@ export const GlobalStyles = css`
     font-weight: 400;
     font-style: normal;
     background-color: #ffffff;
-    overflow-x: hidden;
   }
 
   h1,

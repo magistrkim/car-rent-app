@@ -1,25 +1,23 @@
-import { useState } from 'react'
-import './App.css'
+import { Suspense, lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import SharedLayout from './components/SharedLayout/SharedLayout';
+import Loader from './components/Loader/Loader';
+const HomePage = lazy(() => import('./pages/HomePage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage'));
+const FavoritePage = lazy(() => import('./pages/FavoritePage'));
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Suspense fallback={<Loader />}>
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<HomePage />} />
+          <Route path="/catalog" element={<CatalogPage />} />
+          <Route path="/favorite" element={<FavoritePage />} />
+        </Route>
+      </Routes>
+    </Suspense>
+  );
+};
 
-export default App
+export default App;

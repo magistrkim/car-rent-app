@@ -8,8 +8,8 @@ export const StyledFooter = styled.footer`
   background: linear-gradient(
     to top,
     rgba(11, 68, 205, 1) 0%,
-    rgba(0, 0, 0, 1) 50%,
-    rgba(0, 0, 0, 1) 100%
+
+    rgba(0, 0, 0, 1) 10%
   );
-  min-height: 240px;
+  min-height: 200px;
 `;

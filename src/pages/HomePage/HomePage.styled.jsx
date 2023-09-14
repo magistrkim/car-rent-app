@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { Link } from 'react-router-dom';
 import HeroImage from '../../assets/hero2.jpg';
 
 export const Section = styled.section`
@@ -15,7 +16,7 @@ export const Container = styled.div`
   border-radius: 40px;
 `;
 export const Title = styled.h1`
-  max-width: 500px;
+  max-width: 700px;
   color: #f3f3f3;
   font-size: 64px;
   font-weight: 600;
@@ -30,7 +31,8 @@ export const Text = styled.p`
   line-height: 24px;
   margin-bottom: 60px;
 `;
-export const Button = styled.button`
+export const LinkButton = styled(Link)`
+  display: inline-block;
   font-weight: 600;
   line-height: 20px;
   font-size: 14px;
@@ -39,6 +41,12 @@ export const Button = styled.button`
   color: #ffffff;
   border-radius: 12px;
   margin-bottom: 160px;
+  transition: background-color 0.3 ease-in;
+
+  &:hover,
+  &:focus {
+    background-color: #3470ff;
+  }
 `;
 export const List = styled.ul`
   display: flex;

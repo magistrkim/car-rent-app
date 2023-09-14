@@ -14,6 +14,7 @@ export const StyledNavLink = styled(NavLink)`
   line-height: 24px;
   color: #ffffff;
   text-transform: uppercase;
+  transition: color 0.3 ease-in;
 
   &.active {
     color: #a9a9a9;

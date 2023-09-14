@@ -3,7 +3,7 @@ import {
   Container,
   Title,
   Text,
-  Button,
+  LinkButton,
   List,
   SubTitle,
 } from './HomePage.styled';
@@ -16,9 +16,9 @@ const HomePage = () => {
         <Text>
           Chose the best comfortable car around you with our C-Rent App
         </Text>
-        <Button type="button" onClick={() => {}}>
+        <LinkButton to="/catalog">
           Try for FREE
-        </Button>
+        </LinkButton>
         <List>
           <li>
             <SubTitle>87K</SubTitle>

@@ -1,4 +1,4 @@
-import { Section, Container } from './CatalogPage.styled';
+import { Section, Container, Button, Title } from './CatalogPage.styled';
 import Loader from '../../components/Loader/Loader';
 import AdvertsList from '../../components/AdvertsList/AdvertsList';
 import * as API from '../../api/advert.js';
@@ -34,7 +34,9 @@ const CatalogPage = () => {
   }, [page]);
 
   const handleLoadMore = async () => {
-    setPage(prevPage => prevPage + 1);
+    if (!endAdverts) {
+      setPage(prevPage => prevPage + 1);
+    }
   };
   return (
     <Section>
@@ -45,11 +47,11 @@ const CatalogPage = () => {
           <>
             <AdvertsList data={adverts} />
             {!endAdverts ? (
-              <button type="button" onClick={handleLoadMore}>
+              <Button type="button" onClick={handleLoadMore}>
                 Load more
-              </button>
+              </Button>
             ) : (
-              <p>THE END</p>
+              <Title>You have seen all the cars</Title>
             )}
           </>
         )}

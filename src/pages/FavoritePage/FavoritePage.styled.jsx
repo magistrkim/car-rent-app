@@ -8,5 +8,4 @@ export const Section = styled.section`
 export const Container = styled.div`
   width: 100%;
   min-height: 100vh;
-  background-color: gray;
 `;

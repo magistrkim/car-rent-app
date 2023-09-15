@@ -1,6 +1,15 @@
 import PropTypes from 'prop-types';
 import carImage from '../../assets/car.jpg';
-import { Image } from './AdvertsItem.styled';
+import {
+  CardWrapper,
+  Image,
+  TextWrapper,
+  Title,
+  Span,
+  List,
+  Item,
+  Button,
+} from './AdvertsItem.styled';
 
 const AdvertsItem = ({
   data: {
@@ -17,27 +26,27 @@ const AdvertsItem = ({
   },
 }) => {
   return (
-    <>
+    <CardWrapper>
       <Image src={img ? img : carImage} alt={`${make} ${model} ${year}`} />
-      <div>
-        <h2>
-          <span>{make}</span>
-          <span>{model},</span>
-          <span>{year}</span>
-        </h2>
+      <TextWrapper>
+        <Title>
+          {make} <Span>{model}, </Span>
+          {year}
+        </Title>
         <span>{rentalPrice}</span>
-      </div>
-      <ul>
-        <li>{address.split(',')[1]}</li>
-        <li>{address.split(',')[2]}</li>
-        <li>{rentalCompany}</li>
-        <li>Premium</li>
-        <li>{type}</li>
-        <li>{model}</li>
-        <li>{id}</li>
+      </TextWrapper>
+      <List>
+        <Item>{address.split(',')[1]}</Item>
+        <Item>{address.split(',')[2]}</Item>
+        <Item>{rentalCompany}</Item>
+        <Item>Premium</Item>
+        <Item>{type}</Item>
+        <Item>{model}</Item>
+        <Item>{id}</Item>
         <li>{functionalities[0]}</li>
-      </ul>
-    </>
+      </List>
+      <Button>Learn more</Button>
+    </CardWrapper>
   );
 };
 

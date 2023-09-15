@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { colors } from '../../styles/GlobalStyles';
 
 export const CardWrapper = styled.div`
   display: flex;
@@ -21,7 +22,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #121417;
+  color: ${colors.textDarkColor};
   font-size: 16px;
   font-weight: 500;
   line-height: 24p;
@@ -56,10 +57,15 @@ export const Button = styled.button`
   align-items: center;
   flex-shrink: 0;
   border-radius: 12px;
-  background: #3470ff;
+  background-color: ${colors.secondaryAccentColor};
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  color: #ffffff;
+  color: ${colors.textLightColor};
   margin-top: auto;
+
+  &:hover,
+  &:focus {
+    background-color: ${colors.mainAccentColor};
+  }
 `;

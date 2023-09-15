@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
+import { colors } from '../../styles/GlobalStyles';
 
 export const NavigationList = styled.ul`
   display: flex;
@@ -12,15 +13,15 @@ export const StyledNavLink = styled(NavLink)`
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
-  color: #ffffff;
+  color: ${colors.textLightColor};
   text-transform: uppercase;
   transition: color 0.3 ease-in;
 
   &.active {
-    color: #a9a9a9;
+    color: ${colors.textHoverGrayColor};
   }
   &:hover,
   &:focus {
-    color: #a9a9a9;
+    color: ${colors.textHoverGrayColor};
   }
 `;

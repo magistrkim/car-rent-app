@@ -1,6 +1,16 @@
 import { css } from '@emotion/react';
 import 'modern-normalize';
 
+export const colors = {
+  mainBgColor: '#FFFFFF',
+  mainAccentColor: '#0b44cd',
+  secondaryAccentColor: '#3470ff',
+  textDarkColor: '#121417',
+  textLightColor: '#FFFFFF',
+  textSecondLightColor: '#f3f3f3',
+  textHoverGrayColor: '#a9a9a9',
+};
+
 export const GlobalStyles = css`
   @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
   :root {
@@ -23,7 +33,8 @@ export const GlobalStyles = css`
     font-family: 'Manrope', sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: #ffffff;
+    background-color: ${colors.mainBgColor};
+    /* overflow: hidden; */
   }
 
   h1,

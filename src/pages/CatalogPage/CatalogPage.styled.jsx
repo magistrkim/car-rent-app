@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { colors } from '../../styles/GlobalStyles';
 
 export const Section = styled.section`
   width: 100%;
@@ -15,20 +16,20 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  color: #0b44cd;
+  color: ${colors.mainAccentColor};
   text-decoration-line: underline;
   transition: color 0.3 ease-in;
   margin: 0 auto;
 
   &:hover,
   &:focus {
-    color: #3470ff;
+    color: ${colors.secondaryAccentColor};
   }
 `;
 export const Title = styled.h3`
   display: flex;
   justify-content: center;
-  color: #3470ff;
+  color: ${colors.mainAccentColor};
   font-size: 16px;
   font-weight: 500;
   line-height: 24p;

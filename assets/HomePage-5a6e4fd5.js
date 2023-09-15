@@ -1,4 +1,4 @@
-import{n as t,L as i,j as e}from"./index-400959c1.js";const r="/car-rent-app/assets/hero2-6bb3fa69.jpg",s=t.section`
+import{n as t,L as i,j as e}from"./index-adb91ceb.js";const r="/car-rent-app/assets/hero2-6bb3fa69.jpg",s=t.section`
   width: 100%;
   min-height: 100vh;
   padding: 260px 120px 100px 120px;

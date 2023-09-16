@@ -7,7 +7,7 @@ export const SocialsList = styled.ul`
   gap: 24px;
 
   @media (min-width: 768px) {
-    gap: 44px;
+    gap: 34px;
   }
 `;
 
@@ -17,8 +17,8 @@ justify-content: center;
 align-items: center;
 border: 1px solid #f3f3f3;
   border-radius: 10px;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   &:hover,
   &:focus {
     &:nth-of-type(1) {

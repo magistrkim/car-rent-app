@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Modal from '../Modal/Modal';
+import ModalItem from '../ModalItem/ModalItem';
 import { useState } from 'react';
 import carImage from '../../assets/car.jpg';
 import {
@@ -13,8 +14,9 @@ import {
   Button,
 } from './AdvertsItem.styled';
 
-const AdvertsItem = ({
-  data: {
+const AdvertsItem = ({ data }) => {
+  const {
+    id,
     img,
     make,
     model,
@@ -23,10 +25,8 @@ const AdvertsItem = ({
     address,
     rentalCompany,
     type,
-    id,
     functionalities,
-  },
-}) => {
+  } = data;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => {
@@ -59,7 +59,9 @@ const AdvertsItem = ({
       <Button type="button" onClick={openModal}>
         Learn more
       </Button>
-      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <ModalItem data={data} />
+      </Modal>
     </CardWrapper>
   );
 };

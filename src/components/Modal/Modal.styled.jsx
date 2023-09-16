@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { colors } from '../../styles/GlobalStyles';
 
 export const ModalOverlay = styled.div`
   position: fixed;
@@ -14,8 +15,8 @@ export const ModalOverlay = styled.div`
 `;
 export const ModalFrame = styled.div`
   width: 540px;
-  height: 650px;
-  background: #fff;
+  min-height: 750px;
+  background: ${colors.mainBgColor};
   padding: 40px;
   border-radius: 24px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);

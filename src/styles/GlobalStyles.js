@@ -3,6 +3,7 @@ import 'modern-normalize';
 
 export const colors = {
   mainBgColor: '#FFFFFF',
+  secondaryBgColor: '#f3f3f3',
   mainAccentColor: '#0b44cd',
   secondaryAccentColor: '#3470ff',
   textDarkColor: '#121417',

@@ -1,9 +1,13 @@
-import { Section, Container } from './ContactsPage.styled';
+import { Section, Container, Title } from './ContactsPage.styled';
+import Socials from '../../components/Socials/Socials';
 
 const ContactsPage = () => {
   return (
     <Section>
-      <Container>Contacts Page</Container>
+      <Container>
+        <Title>Follow us on social media</Title>
+        <Socials />
+      </Container>
     </Section>
   );
 };

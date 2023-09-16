@@ -25,7 +25,7 @@ const AdvertsItem = ({ data }) => {
     address,
     rentalCompany,
     type,
-    functionalities,
+    accessories,
   } = data;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -54,7 +54,7 @@ const AdvertsItem = ({ data }) => {
         <Item>{type}</Item>
         <Item>{model}</Item>
         <Item>{id}</Item>
-        <li>{functionalities[0]}</li>
+        <li>{accessories[0]}</li>
       </List>
       <Button type="button" onClick={openModal}>
         Learn more
@@ -79,6 +79,6 @@ AdvertsItem.propTypes = {
     rentalCompany: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
-    functionalities: PropTypes.arrayOf(PropTypes.string).isRequired,
+    accessories: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
 };

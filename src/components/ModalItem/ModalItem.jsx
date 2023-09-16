@@ -77,7 +77,7 @@ const ModalItem = ({
           </RentalItem>
         </RentalList>
 
-        <Button href="tel:+380976686033">Rental car</Button>
+        <Button href="tel:+380730000000">Rental car</Button>
       </TextWrapper>
     </div>
   );

@@ -1,4 +1,4 @@
-import{n as t,j as e}from"./index-27c3eecc.js";import{H as n}from"./hero2-d6eff398.js";const r=t.section`
+import{n as t,j as e}from"./index-e50ba741.js";import{H as n}from"./hero2-d6eff398.js";const r=t.section`
   width: 100%;
   min-height: 100vh;
   padding: 260px 120px 100px 120px;

@@ -1,8 +1,14 @@
-# React + Vite
+# C-RENT App
+# Fastest & secure platform to rent a car
+![Screenshot_1](https://github.com/magistrkim/car-rent-app/assets/115700340/1a9e15fa-0f12-42fd-90ab-67bca2e6be2b)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Introducing our cutting-edge car rental app, 
+the ultimate destination for premium car enthusiasts.
+Experience luxury like never before 
+with our curated selection of high-end vehicles. 
+Our app ensures fast and hassle-free access 
+to these premium cars, providing you with an unmatched driving experience. 
+Whether you're looking to turn heads or enjoy a top-notch ride, 
+our app is your gateway to the world of luxury and convenience in the world of car rentals.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![Screenshot_2](https://github.com/magistrkim/car-rent-app/assets/115700340/32b74645-7dcb-48ae-a97f-82b8ac723399)

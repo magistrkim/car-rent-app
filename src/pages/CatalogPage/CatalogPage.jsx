@@ -42,7 +42,7 @@ const CatalogPage = () => {
   return (
     <Section>
       <Container>
-        <FormSelect />
+        <FormSelect onSubmit={()=> {}}/>
         {isLoading && <Loader />}
         {error && <div>{error}</div>}
         {!isLoading && !error && adverts.length > 0 && (

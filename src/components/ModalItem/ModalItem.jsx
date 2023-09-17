@@ -35,7 +35,12 @@ const ModalItem = ({
 }) => {
   return (
     <div>
-      <Image src={img ? img : carImage} alt={`${make} ${model} ${year}`} />
+      <Image
+        src={img ? img : carImage}
+        alt={`${make} ${model} ${year}`}
+        width="100%"
+        height="228px"
+      />
 
       <TextWrapper>
         <Title>
@@ -70,7 +75,7 @@ const ModalItem = ({
             <RentalItem key={item}>{item}</RentalItem>
           ))}
           <RentalItem>
-            Mileage: <Span>{mileage}</Span>
+            Mileage: <Span>{mileage.toLocaleString('en-US')}</Span>
           </RentalItem>
           <RentalItem>
             Price: <Span>{rentalPrice}</Span>

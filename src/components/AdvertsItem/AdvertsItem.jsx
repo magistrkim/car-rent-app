@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
-// import { colors } from '../../styles/GlobalStyles';
-import { AiOutlineHeart } from 'react-icons/ai';
-// import {  AiFillHeart } from 'react-icons/ai';
+import FavoriteButton from '../FavoriteButton/FavoriteButton';
 import Modal from '../Modal/Modal';
 import ModalItem from '../ModalItem/ModalItem';
 import { useState } from 'react';
 import carImage from '../../assets/car.jpg';
 import {
   CardWrapper,
-  FavoriteBtn,
+  HeartBtn,
   Image,
   TextWrapper,
   Title,
@@ -18,7 +16,7 @@ import {
   Button,
 } from './AdvertsItem.styled';
 
-const AdvertsItem = ({ data }) => {
+const AdvertsItem = ({ data, reload }) => {
   const {
     id,
     img,
@@ -43,15 +41,15 @@ const AdvertsItem = ({ data }) => {
 
   return (
     <CardWrapper>
-      <FavoriteBtn type="button" onClick={() => {}}>
-        <AiOutlineHeart size={22} />
-        {/* {isFavorite ? (
-          <AiFillHeart color={colors.mainAccentColor} size={22} />
-        ) : (
-          <AiOutlineHeart size={22} />
-        )} */}
-      </FavoriteBtn>
-      <Image src={img ? img : carImage} alt={`${make} ${model} ${year}`} />
+      <HeartBtn type="button" onClick={() => {}}>
+        <FavoriteButton data={data} reload={reload} />
+      </HeartBtn>
+      <Image
+        src={img ? img : carImage}
+        alt={`${make} ${model} ${year}`}
+        width="100%"
+        height="268px"
+      />
       <TextWrapper>
         <Title>
           {make} <Span>{model}, </Span>
@@ -94,4 +92,5 @@ AdvertsItem.propTypes = {
     id: PropTypes.number.isRequired,
     accessories: PropTypes.arrayOf(PropTypes.string).isRequired,
   }).isRequired,
+  reload: PropTypes.bool,
 };

@@ -1,44 +1,21 @@
 import { Section, Container } from './FavoritePage.styled';
-import AdvertsList from '../../components/AdvertsList/AdvertsList';
+import FavoriteList from '../../components/FavoriteList/FavoriteList';
 import FormSelect from '../../components/FilterForm/FilterForm';
-import Loader from '../../components/Loader/Loader';
-import { useState, useEffect } from 'react';
-import * as API from '../../api/advert.js';
+import useFavorites from '../../hooks/useFavorite';
 
 const FavoritePage = () => {
-  const [adverts, setAdverts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
-  const page = 1;
-
-  useEffect(() => {
-    (async () => {
-      try {
-        setIsLoading(true);
-        const data = await API.getAllAdverts(page);
-        setError('');
-        if (page === 1) {
-          setAdverts(data);
-        } else {
-          setAdverts(prevState => [...prevState, ...data]);
-        }
-      } catch (error) {
-        setError(error.response.data);
-      } finally {
-        setIsLoading(false);
-      }
-    })();
-  }, [page]);
+  const [favorites, toggleFavorites] = useFavorites();
   return (
     <Section>
       <Container>
-        <FormSelect/>
-        {isLoading && <Loader />}
-        {error && <div>{error}</div>}
-        {!isLoading && !error && adverts.length > 0 && (
-          <>
-            <AdvertsList data={adverts} />
-          </>
+        <FormSelect onSubmit={() => {}} />
+        {favorites.length ? (
+          <FavoriteList toggleFavorites={toggleFavorites} />
+        ) : (
+          <div>
+            <span>Your favorites list is empty. </span>
+            <a to="/rental">Add some cars</a>
+          </div>
         )}
       </Container>
     </Section>

@@ -15,12 +15,12 @@ export const Image = styled.img`
   border-radius: 14px;
   margin-bottom: 14px;
 `;
-export const FavoriteBtn = styled.button`
+export const HeartBtn = styled.button`
   position: absolute;
   margin: 0;
   padding: 0;
   top: 14px;
-  right: 14px;
+  right: 20px;
   width: 18px;
   height: 18px;
   font-size: 18px;
@@ -28,13 +28,6 @@ export const FavoriteBtn = styled.button`
   color: ${colors.textLightColor};
   background-color: transparent;
   border: none;
-
-  transition: color 0.3 ease-in;
-
-  &:hover,
-  &:focus {
-    color: ${colors.mainAccentColor};
-  }
 `;
 
 export const TextWrapper = styled.div`

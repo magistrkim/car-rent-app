@@ -11,3 +11,8 @@ export const getAllAdverts = async (page = 1) => {
   );
   return data;
 };
+export const updateAdvert = async (id, updates) => {
+  const { data } = await advertsInstance.put(`/adverts/${id}`, updates);
+
+  return data;
+};

@@ -6,9 +6,11 @@ const AdvertsList = ({ data }) => {
   return (
     <List>
       {data.map(item => (
-        <li key={`${item.id}`} data={item}>
-          <AdvertsItem data={item} />
-        </li>
+        <AdvertsItem
+          key={`${item.id}`}
+          data={item}
+          reload={false}
+        />
       ))}
     </List>
   );

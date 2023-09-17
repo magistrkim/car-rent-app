@@ -1,6 +1,6 @@
 # C-RENT App
 ## Features 
-- 🚗  Introducing our cutting-edge car rental app.<br>
+- 🚗  Cutting-edge, secure car rental app.<br>
 - 🍸  Luxury and fashionable design app.<br>
 - ⏳   Select and filter options .<br>
 - 🔄 Ability to chose your favorite cars and to see them on your page.

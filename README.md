@@ -38,6 +38,7 @@ The project is built using the following technologies and libraries:
 ![Visual Studio Code](https://img.shields.io/badge/-Visual%20Studio%20Code-05122A?style=flat&logo=visual-studio-code&logoColor=007ACC)&nbsp;
 
 </span>
+
 ![Screenshot_2](https://github.com/magistrkim/car-rent-app/assets/115700340/32b74645-7dcb-48ae-a97f-82b8ac723399)
 
 Introducing our cutting-edge car rental app, 

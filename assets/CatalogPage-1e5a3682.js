@@ -1,4 +1,4 @@
-import{n as r,c as l,j as e,r as s,a as y}from"./index-96a2780c.js";import{P as c,A as v,g as A,l as S,F as w}from"./advert-f1562ff2.js";const b=r.section`
+import{n as r,c as l,j as e,r as s,a as y}from"./index-6fd80dfe.js";import{P as c,A as v,g as A,l as S,F as w}from"./advert-24ad6579.js";const b=r.section`
   width: 100%;
   min-height: 100vh;
   padding: 150px 120px;

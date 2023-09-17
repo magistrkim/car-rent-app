@@ -1,9 +1,9 @@
 # C-RENT App
 ## Features 
 - 🚗  Cutting-edge, secure car rental app.<br>
-- 🍸  Luxury and fashionable design app.<br>
+- 🍸   Luxury and fashionable design.<br>
 - ⏳   Select and filter options .<br>
-- 🔄 Ability to chose your favorite cars and to see them on your page.
+- 🔄  Ability to chose your favorite cars and to see them on your page.
 
 ## Technologies
 The project is built using the following technologies and libraries:

@@ -1,7 +1,7 @@
-import{n as o,c as t,L as r,j as e}from"./index-d82b092a.js";import{H as s}from"./hero2-d6eff398.js";const c=o.section`
+import{n as o,c as t,L as r,j as e}from"./index-b2423703.js";import{H as s}from"./hero2-d6eff398.js";const c=o.section`
   width: 100%;
   min-height: 100vh;
-  padding: 260px 120px 100px 120px;
+  padding: 260px 120px 10px 120px;
   background-image: url('${s}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -32,7 +32,7 @@ import{n as o,c as t,L as r,j as e}from"./index-d82b092a.js";import{H as s}from"
   background-color: ${t.mainAccentColor};
   color: ${t.textLightColor};
   border-radius: 12px;
-  margin-bottom: 160px;
+  margin-bottom: 120px;
   transition: background-color 0.3 ease-in;
 
   &:hover,

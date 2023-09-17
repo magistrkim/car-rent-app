@@ -1,10 +1,14 @@
 import PropTypes from 'prop-types';
+// import { colors } from '../../styles/GlobalStyles';
+import { AiOutlineHeart } from 'react-icons/ai';
+// import {  AiFillHeart } from 'react-icons/ai';
 import Modal from '../Modal/Modal';
 import ModalItem from '../ModalItem/ModalItem';
 import { useState } from 'react';
 import carImage from '../../assets/car.jpg';
 import {
   CardWrapper,
+  FavoriteBtn,
   Image,
   TextWrapper,
   Title,
@@ -36,8 +40,17 @@ const AdvertsItem = ({ data }) => {
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
   return (
     <CardWrapper>
+      <FavoriteBtn type="button" onClick={() => {}}>
+        <AiOutlineHeart size={22} />
+        {/* {isFavorite ? (
+          <AiFillHeart color={colors.mainAccentColor} size={22} />
+        ) : (
+          <AiOutlineHeart size={22} />
+        )} */}
+      </FavoriteBtn>
       <Image src={img ? img : carImage} alt={`${make} ${model} ${year}`} />
       <TextWrapper>
         <Title>

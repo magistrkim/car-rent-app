@@ -6,7 +6,7 @@ import { colors } from '../../styles/GlobalStyles';
 export const Section = styled.section`
   width: 100%;
   min-height: 100vh;
-  padding: 260px 120px 100px 120px;
+  padding: 260px 120px 10px 120px;
   background-image: url('${HeroImage}');
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,7 +41,7 @@ export const LinkButton = styled(Link)`
   background-color: ${colors.mainAccentColor};
   color: ${colors.textLightColor};
   border-radius: 12px;
-  margin-bottom: 160px;
+  margin-bottom: 120px;
   transition: background-color 0.3 ease-in;
 
   &:hover,

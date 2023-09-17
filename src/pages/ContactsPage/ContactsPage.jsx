@@ -8,12 +8,12 @@ const ContactsPage = () => {
   return (
     <Section>
       <Container>
-        <Title>Send us message</Title>
+        <Title>Send message</Title>
         <SocialsList>
           <SocialsItem>
             <SocialsLink
-              href="https://www.facebook.com/nataliya.kachor"
-              aria-label="Facebook link"
+              href="https://web.telegram.org"
+              aria-label="telegram link"
               target="_blank"
               referrerPolicy="no-referrer"
             >
@@ -22,8 +22,8 @@ const ContactsPage = () => {
           </SocialsItem>
           <SocialsItem>
             <SocialsLink
-              href="https://instagram.com/magistr_kim?igshid=OGQ5ZDc2ODk2ZA=="
-              aria-label="Instagram link"
+              href="https://www.whatsapp.com"
+              aria-label="whatsapp link"
               target="_blank"
               referrerPolicy="no-referrer"
             >
@@ -32,8 +32,8 @@ const ContactsPage = () => {
           </SocialsItem>
           <SocialsItem>
             <SocialsLink
-              href="https://www.linkedin.com/in/nataliya-kachor/"
-              aria-label="Youtube link"
+              href="https://www.viber.com"
+              aria-label="viber link"
               target="_blank"
               referrerPolicy="no-referrer"
             >
@@ -42,8 +42,8 @@ const ContactsPage = () => {
           </SocialsItem>
           <SocialsItem>
             <SocialsLink
-              href="https://github.com/magistrkim"
-              aria-label="Youtube link"
+              href="https://www.google.com"
+              aria-label="gmail link"
               target="_blank"
               referrerPolicy="no-referrer"
             >

@@ -5,7 +5,7 @@ import { colors } from '../../styles/GlobalStyles';
 export const Section = styled.section`
   width: 100%;
   min-height: 100vh;
-  padding: 200px 120px 100px 120px;
+  padding: 200px 120px 10px 120px;
   background-image: url('${HeroImage}');
   background-repeat: no-repeat;
   background-size: cover;

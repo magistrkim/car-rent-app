@@ -9,10 +9,11 @@ export const StyledHeader = styled.header`
   padding: 12px 120px;
   background-color: #0b44cd;
   position: fixed;
+  z-index: 50;
 `;
 export const LogoImg = styled.img`
-  width: 100px;
-  height: 78px;
+  width: 90px;
+  height: 70px;
 `;
 export const Button = styled(Link)`
   font-weight: 600;

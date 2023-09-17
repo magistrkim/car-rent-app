@@ -37,7 +37,7 @@ const Socials = () => {
           <SocialsItem>
             <SocialsLink
               href="https://www.linkedin.com/in/nataliya-kachor/"
-              aria-label="Youtube link"
+              aria-label="Linkedin link"
               target="_blank"
               referrerPolicy="no-referrer"
             >
@@ -47,7 +47,7 @@ const Socials = () => {
           <SocialsItem>
             <SocialsLink
               href="https://github.com/magistrkim"
-              aria-label="Youtube link"
+              aria-label="Github link"
               target="_blank"
               referrerPolicy="no-referrer"
             >

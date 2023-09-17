@@ -11,6 +11,7 @@ export const colors = {
   textLightColor: '#FFFFFF',
   textSecondLightColor: '#f3f3f3',
   textHoverGrayColor: '#a9a9a9',
+  inputBgColor: '#F7F7FB',
 };
 
 export const GlobalStyles = css`

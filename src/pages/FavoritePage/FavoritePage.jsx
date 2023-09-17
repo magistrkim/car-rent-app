@@ -1,5 +1,6 @@
 import { Section, Container } from './FavoritePage.styled';
 import AdvertsList from '../../components/AdvertsList/AdvertsList';
+import FormSelect from '../../components/FilterForm/FilterForm';
 import Loader from '../../components/Loader/Loader';
 import { useState, useEffect } from 'react';
 import * as API from '../../api/advert.js';
@@ -31,6 +32,7 @@ const FavoritePage = () => {
   return (
     <Section>
       <Container>
+        <FormSelect/>
         {isLoading && <Loader />}
         {error && <div>{error}</div>}
         {!isLoading && !error && adverts.length > 0 && (

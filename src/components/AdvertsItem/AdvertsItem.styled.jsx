@@ -2,6 +2,7 @@ import styled from '@emotion/styled';
 import { colors } from '../../styles/GlobalStyles';
 
 export const CardWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -13,6 +14,27 @@ export const Image = styled.img`
   object-fit: cover;
   border-radius: 14px;
   margin-bottom: 14px;
+`;
+export const FavoriteBtn = styled.button`
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 14px;
+  right: 14px;
+  width: 18px;
+  height: 18px;
+  font-size: 18px;
+
+  color: ${colors.textLightColor};
+  background-color: transparent;
+  border: none;
+
+  transition: color 0.3 ease-in;
+
+  &:hover,
+  &:focus {
+    color: ${colors.mainAccentColor};
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -52,7 +74,7 @@ export const Button = styled.button`
   display: flex;
   width: 100%;
   height: 44px;
-  padding: 12px 80px;
+  padding: 12px 60px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;

@@ -1,5 +1,6 @@
 import { Section, Container, Button, Title } from './CatalogPage.styled';
 import Loader from '../../components/Loader/Loader';
+import FormSelect from '../../components/FilterForm/FilterForm';
 import AdvertsList from '../../components/AdvertsList/AdvertsList';
 import * as API from '../../api/advert.js';
 import { useState, useEffect } from 'react';
@@ -41,6 +42,7 @@ const CatalogPage = () => {
   return (
     <Section>
       <Container>
+        <FormSelect />
         {isLoading && <Loader />}
         {error && <div>{error}</div>}
         {!isLoading && !error && adverts.length > 0 && (

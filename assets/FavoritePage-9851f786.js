@@ -1,4 +1,4 @@
-import{n as a,c as i,L as u,r as c,j as e}from"./index-6fd80dfe.js";import{P as g,A as m,a as x,u as p,F as v}from"./advert-24ad6579.js";const f="/car-rent-app/assets/favorite-37fd50b7.jpg",w=a.section`
+import{n as a,c as i,L as u,r as c,j as e}from"./index-86fe39fd.js";import{P as g,A as m,a as x,u as p,F as v}from"./advert-bc9a7dc2.js";const f="/car-rent-app/assets/favorite-37fd50b7.jpg",w=a.section`
   width: 100%;
   min-height: 100vh;
   padding: 150px 120px;

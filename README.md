@@ -14,7 +14,6 @@ The project is built using the following technologies and libraries:
   <li>Vite</li>
   <li>Emotion</li>
   <li>Axios</li>
-  <li>Formik and Yup</li>
   <li>React Router</li>
   <li>Styled Components</li>
   <li>Vite Plugin SVGR</li>

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import {
   Form,
   FormLabel,
@@ -8,48 +9,69 @@ import {
   SelectedStyled,
 } from './FilterForm.styled';
 import makes from '../../data/makes.json';
-import prices from '../../data/prices.json';
-import useForm from '../../hooks/useForm';
-
-const models = makes.map(make => ({ value: make, label: make }));
-const pricePerHour = prices.map(price => ({ value: price, label: price }));
-
-const initialState = {
-  model: '',
-  price: '',
-  minMileage: '',
-  maxMileage: '',
-};
+// import useForm from '../../hooks/useForm';
 
 const FormSelect = ({ onSubmit }) => {
-  const { state, handleChange, handleSubmit } = useForm({
-    initialState,
-    onSubmit,
+  const [data, setData] = useState({
+    model: '',
+    price: '',
+    minMileage: '',
+    maxMileage: '',
   });
 
-  const { model, price, minMileage, maxMileage } = state;
+  const { model, price, minMileage, maxMileage } = data;
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    onSubmit(data);
+  };
+
+  const handleModelChange = value => {
+    const model = value?.label ?? '';
+    setData({ ...data, model });
+    if (!value) onSubmit({ ...data, model: '' });
+  };
+  const handlePriceChange = value => {
+    const price = parseInt(value?.label) || '';
+    setData({ ...data, price });
+    if (!value) onSubmit({ ...data, price: '' });
+  };
+  const handleMinMileageChange = event => {
+    const { value } = event.target;
+    setData({ ...data, minMileage: value });
+    if (!value) onSubmit({ ...data, minMileage: '' });
+  };
+  const handleMaxMileageChange = event => {
+    const { value } = event.target;
+    setData({ ...data, maxMileage: value });
+    if (!value) onSubmit({ ...data, maxMileage: '' });
+  };
+  const models = makes.map(make => ({ value: make, label: make }));
+  const pricePerHour = Array.from({ length: 100 }).map((_, index) => {
+    return {
+      label: `${(index + 1) * 10}$`,
+    };
+  });
   return (
     <Form onSubmit={handleSubmit}>
       <div>
         <FormLabel>Car brand</FormLabel>
         <SelectStyles
-          name="model"
-          value={model}
           placeholder="Enter the text"
           options={models}
           styles={SelectedStyled}
-          onChange={() => {}}
+          onChange={handleModelChange}
+          value={model ? { label: model } : ''}
         />
       </div>
       <div>
         <FormLabel>Price / 1 hour</FormLabel>
         <SelectStyles
-          name="price"
-          value={price}
+          value={price ? { label: price } : ''}
           placeholder="To $"
           options={pricePerHour}
           styles={SelectedStyled}
-          onChange={() => {}}
+          onChange={handlePriceChange}
         />
       </div>
       <div>
@@ -58,15 +80,13 @@ const FormSelect = ({ onSubmit }) => {
           value={minMileage}
           placeholder="From"
           type="number"
-          name="minMileage"
-          onChange={handleChange}
+          onChange={handleMinMileageChange}
         />
         <MileageInput
           value={maxMileage}
           placeholder="To"
           type="number"
-          name="maxMileage"
-          onChange={handleChange}
+          onChange={handleMaxMileageChange}
         />
       </div>
       <SubmitButton type="submit">Search</SubmitButton>
@@ -77,5 +97,5 @@ const FormSelect = ({ onSubmit }) => {
 export default FormSelect;
 
 FormSelect.propTypes = {
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func,
 };

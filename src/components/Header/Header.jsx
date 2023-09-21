@@ -10,7 +10,7 @@ const Header = () => {
         <LogoImg src={logoPng} alt="logo-image" />
       </Link>
       <Navbar />
-      <Button to="/contacts">JOIN US</Button>
+      <Button to="/contacts">CONTACT US</Button>
     </StyledHeader>
   );
 };

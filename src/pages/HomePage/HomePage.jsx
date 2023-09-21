@@ -17,7 +17,7 @@ const HomePage = () => {
           Chose the best comfortable car around you with our C-Rent App
         </Text>
         <LinkButton to="/catalog">
-          Try for FREE
+          CARS
         </LinkButton>
         <List>
           <li>

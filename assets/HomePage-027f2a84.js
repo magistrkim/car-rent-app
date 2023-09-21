@@ -1,4 +1,4 @@
-import{n as o,c as t,L as r,j as e}from"./index-86fe39fd.js";import{H as s}from"./hero2-d6eff398.js";const c=o.section`
+import{n as o,c as t,L as r,j as e}from"./index-e7b14670.js";import{H as s}from"./hero2-d6eff398.js";const c=o.section`
   width: 100%;
   min-height: 100vh;
   padding: 260px 120px 10px 120px;
@@ -50,4 +50,4 @@ import{n as o,c as t,L as r,j as e}from"./index-86fe39fd.js";import{H as s}from"
   font-weight: 700;
   line-height: 58px;
   margin-bottom: 10px;
-`,g=()=>e.jsx(c,{children:e.jsxs(l,{children:[e.jsx(a,{children:"Fastest & secure platform to rent a car"}),e.jsx(n,{children:"Chose the best comfortable car around you with our C-Rent App"}),e.jsx(d,{to:"/catalog",children:"Try for FREE"}),e.jsxs(x,{children:[e.jsxs("li",{children:[e.jsx(i,{children:"87K"}),e.jsx(n,{children:"Cars annualy rented"})]}),e.jsxs("li",{children:[e.jsx(i,{children:"10M+"}),e.jsx(n,{children:"Trusted customers"})]}),e.jsxs("li",{children:[e.jsx(i,{children:"195"}),e.jsx(n,{children:"Countries supported"})]})]})]})});export{g as default};
+`,g=()=>e.jsx(c,{children:e.jsxs(l,{children:[e.jsx(a,{children:"Fastest & secure platform to rent a car"}),e.jsx(n,{children:"Chose the best comfortable car around you with our C-Rent App"}),e.jsx(d,{to:"/catalog",children:"CARS"}),e.jsxs(x,{children:[e.jsxs("li",{children:[e.jsx(i,{children:"87K"}),e.jsx(n,{children:"Cars annualy rented"})]}),e.jsxs("li",{children:[e.jsx(i,{children:"10M+"}),e.jsx(n,{children:"Trusted customers"})]}),e.jsxs("li",{children:[e.jsx(i,{children:"195"}),e.jsx(n,{children:"Countries supported"})]})]})]})});export{g as default};
